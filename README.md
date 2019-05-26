@@ -1,11 +1,10 @@
-# Intro to Property Based Testing Slides
+# Level Up with Generative Testing
 
-Presentation created for Prairie Dev Con 2018.
+Presentation created for Prairie Dev Con 2019.
 
 # Online
 
 You can find an online version of the slides at:
-[https://shanecharles.github.io/intro-property-based-testing-prdc2018/](https://shanecharles.github.io/intro-property-based-testing-prdc2018/)
 
 
 ## Build
