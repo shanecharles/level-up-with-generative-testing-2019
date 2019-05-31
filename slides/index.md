@@ -56,9 +56,11 @@
 - had day interrupted by a critical bug
 - an evening
 - weekend
-- were there tests?
 
 ---
+### Were there tests?
+---
+
 ### How'd they get past the tests?
 
 We can't think of everything.
@@ -161,7 +163,7 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 - Complex solutions
   - Lots of input variations
 - APIs
-- End to end testing
+- End to end
 
 ***
 
@@ -200,6 +202,23 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 ### Show them the demos
 
 ***
+### Once upon a time 
+
+- Worker uses tag for identification
+- Screen prompts available actions for shift
+- Actions: 
+  - Start floor
+  - End floor
+  - Start break
+  - End break
+
+---
+### Finite State Machine
+
+![fsm](images/finitestatemachine1.png)
+
+***
+
 ### Stateful Testing / Model based testing
 
 Simplified model to test the larger
@@ -213,24 +232,6 @@ Simplified model to test the larger
  - Model
  - System
 - Check for divergence
-
-***
-
-### Real world situation
-
-- Worker uses tag for identification
-- Screen prompts available actions for shift
-- Actions: 
-  - Start floor
-  - End floor
-  - Start break
-  - End break
-
-***
-
-### Finite State Machine
-
-![fsm](images/finitestatemachine1.png)
 
 ***
 
@@ -269,9 +270,14 @@ Who thinks they can benefit from generative testing?
 ---
 ### What they found
 
+- Tested +1,000,000 lines (C)
+ - Using 20,000 lines (erlang)
+ - Found +200 issues
+
 - Specification errors
-- Incompatibilities
-- Priority rollover
+- Bugs 
+- Incompatibility
+ - Priority rollover
 
 ---
 ### Jepsen.io
@@ -292,12 +298,25 @@ Who thinks they can benefit from generative testing?
  - ~34% data loss
 - Redis
  - ~56% write loss
-- RabbitMQ, Cassandra, etcd, etc.
+- FaunaDB
+ - Race conditions
+- More at Jepsen.io
 
 ***
 ### Summary
 
+- Better tests?
+- Let the computer find the weird issues
+- Test things hard to do by hand or regular testing
+- Shrinking is awesome
 - Generative testing works
+
+---
+### Final
+
+> Property Based Testing finds more bugs with less effort
+
+John Hughes
 
 ***
 
