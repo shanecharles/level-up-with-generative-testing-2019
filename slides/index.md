@@ -43,6 +43,7 @@
 
 ### Our Path
 
+- Tell me something
 - Generative testing
 - Property based testing 
 - Stateful testing
@@ -50,8 +51,25 @@
 - Wrap up
 
 ***
+### Has anyone
 
+- had day interrupted by a critical bug
+- an evening
+- weekend
+- were there tests?
+
+---
+### How'd they get past the tests?
+
+We can't think of everything.
+
+***
 ### Generative Testing
+
+Getting computers to do the heavy lifting of coming up with test inputs so we don't have to.
+
+---
+### Generative Testing Types
 
 - Property based testing
 - Stateful testing (Model based testing)
@@ -82,7 +100,6 @@
 ---
 ### Clojure
 
-
     [lang=clojure]
     (require '[clojure.test.check :as tc])
     (require '[clojure.test.check.generators :as gen])
@@ -94,7 +111,6 @@
              y (second v)]
         (= (+ x y) (+ y x)))))
 
-  
 ---
 ### C#
 
@@ -118,11 +134,10 @@
 ***
 ### Why should we?
 
-- Actively looks for undiscovered bugs
-- Requires deeper understanding of domain
-  - Sets of inputs and outputs vs example based
-- Generates inputs/sequences we wouldn't
-- Help avoid Pesticide Paradox
+- Looks for undiscovered bugs
+- Deeper understanding of domain
+- Generates inputs we wouldn't
+- Not example based
 
 ---
 ### But we can generate random data in
@@ -150,7 +165,7 @@
 
 ***
 
-### Test not
+### When not?
 
 - Overly simple
 - Minimal input variation
@@ -158,11 +173,19 @@
 
 ***
 
-
-
 ### Property Based Testing
 
-> Given a subset of inputs, there exists a property which dictates a subset of outputs.
+> Given a subset of inputs, there exists a property which dictates results with a common trait.
+
+---
+### Examples
+
+    let Multiplication_identity_property (x : int) = 
+      x = x * 1
+
+    let Multiplication_even_property (x : int) (y : int) =
+      (x % 2 = 0) ==> 
+        0 = (x * y) % 2 
 
 ---
 ### Property Patterns
@@ -174,12 +197,12 @@
 - Hard to prove, easy to verify
 
 ---
-### To some code
+### Show them the demos
 
 ***
-
 ### Stateful Testing / Model based testing
 
+Simplified model to test the larger
 
 ---
 ### What do we do
@@ -195,7 +218,7 @@
 
 ### Real world situation
 
-- Worker uses RFID tag for identification
+- Worker uses tag for identification
 - Screen prompts available actions for shift
 - Actions: 
   - Start floor
