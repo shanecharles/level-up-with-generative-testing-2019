@@ -136,21 +136,6 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 - Generates variations we wouldn't
 
 ---
-### But we can generate random data in
-### {unit testing framework}?
-
-- Shrinking
-
----
-#### Shrinking sounds slow?
-
-- No
-- Yes
-- It depends
-- It's worth it
-
-***
-
 ### When should we?
 
 - Mission critical functions
@@ -178,8 +163,7 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
     let Multiplication_identity_property (x : int) = 
       x = x * 1
 
-    let Multiplication_even_property (x : int) (y : int) =
-      (x % 2 = 0) ==> 
+    let Multiplication_even_property (EvenInt x) (y : int) =
         0 = (x * y) % 2 
 
 ---
@@ -191,9 +175,34 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 - Test oracle
 
 ---
-### Show them the demos
+### Generators
+
+Functions combined together to build complex or narrow input variations.
+
+---
+### Common generators
+
+- choose
+- elements
+- frequency
+- sample
+
+---
+### But we can generate random data in
+### {unit testing framework}?
+
+- Shrinking
+
+---
+#### Shrinking sounds slow?
+
+- No
+- Yes
+- It depends
+- It's worth it
 
 ***
+
 ### Once upon a time 
 
 - Worker uses tag for identification
@@ -228,15 +237,6 @@ Simplified model to test the larger
 ***
 
 ### More code
-
-***
-
-### Divergence Problems
-
-- System under test
-- Model
-- Both above
-- Specification
 
 ***
 ### Further inspection
