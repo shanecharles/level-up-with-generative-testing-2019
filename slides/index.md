@@ -43,7 +43,6 @@
 
 ### Our Path
 
-- Tell me something
 - Generative testing
 - Property based testing 
 - Stateful testing
@@ -58,9 +57,6 @@
 - weekend
 
 ---
-### Were there tests?
----
-
 ### How'd they get past the tests?
 
 We can't think of everything.
@@ -103,7 +99,6 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 ### Clojure
 
     [lang=clojure]
-    (require '[clojure.test.check :as tc])
     (require '[clojure.test.check.generators :as gen])
     (require '[clojure.test.check.properties :as prop])
 
@@ -138,8 +133,7 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 
 - Looks for undiscovered bugs
 - Deeper understanding of domain
-- Generates inputs we wouldn't
-- Not example based
+- Generates variations we wouldn't
 
 ---
 ### But we can generate random data in
@@ -165,8 +159,7 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 - APIs
 - End to end
 
-***
-
+---
 ### When not?
 
 - Overly simple
@@ -196,7 +189,6 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 - Somethings never change
 - Different path same destination
 - Test oracle
-- Hard to prove, easy to verify
 
 ---
 ### Show them the demos
@@ -228,7 +220,7 @@ Simplified model to test the larger
 
 - Create model
  - Simplified representation
-- Execute actions
+- Execute actions (specifications)
  - Model
  - System
 - Check for divergence
