@@ -160,8 +160,6 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
 ---
 ### Examples
 
-    let Multiplication_identity_property (x : int) = 
-      x = x * 1
 
     let Multiplication_even_property (EvenInt x) (y : int) =
         0 = (x * y) % 2 
