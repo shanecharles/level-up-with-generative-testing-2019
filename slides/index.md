@@ -165,11 +165,16 @@ Getting computers to do the heavy lifting of coming up with test inputs so we do
         0 = (x * y) % 2 
 
 ---
+### Demo
+
+No more hand waving
+
+---
 ### Property Patterns
 
 - There and back
 - Somethings never change
-- Different path same destination
+- Different paths same destination
 - Test oracle
 
 ---
@@ -186,6 +191,13 @@ Functions combined together to build complex or narrow input variations.
 - constant
 - sample
 
+
+---
+### Demo
+
+More code
+(Don't forget C#)
+
 ---
 ### But we can generate random data in
 ### {unit testing framework}?
@@ -199,6 +211,11 @@ Functions combined together to build complex or narrow input variations.
 - Yes
 - It depends
 - It's worth it
+
+---
+### Demo
+
+Shrinking FTW
 
 ***
 
@@ -233,9 +250,10 @@ Simplified model to test the larger
  - System
 - Check for divergence
 
-***
+---
+### Demo
 
-### More code
+Stateful Testing
 
 ***
 ### Further inspection
@@ -300,7 +318,6 @@ Who thinks they can benefit from generative testing?
 - Let the computer find the weird issues
 - Test things hard to do by hand or regular testing
 - Shrinking is awesome
-- Generative testing works
 
 ---
 ### Final
