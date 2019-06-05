@@ -183,6 +183,7 @@ Functions combined together to build complex or narrow input variations.
 - choose
 - elements
 - frequency
+- constant
 - sample
 
 ---
