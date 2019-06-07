@@ -12,7 +12,7 @@ You can find an online version of the slides at:
 
 [https://github.com/shanecharles/level-up-with-generative-testing-2019-fscheck-demos](https://github.com/shanecharles/level-up-with-generative-testing-2019-fscheck-demos)
 
-[https://github.com/shanecharles/level-up-with-generative-testing-2019-csharp-demo](C## Property Based Testing with )
+[C# with Property Based Testing](https://github.com/shanecharles/level-up-with-generative-testing-2019-csharp-demo)
 
 ## Build
 
