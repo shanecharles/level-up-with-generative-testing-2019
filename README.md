@@ -16,6 +16,8 @@ You can find an online version of the slides at:
 
 [C# with Property Based Testing](https://github.com/shanecharles/level-up-with-generative-testing-2019-csharp-demo)
 
+[Stateful Testing / Model Based Testing](https://github.com/shanecharles/level-up-with-generative-testing-2019-stateful-demo)
+
 ## Build
 
 On Windows run
