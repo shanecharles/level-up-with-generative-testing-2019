@@ -10,8 +10,6 @@ You can find an online version of the slides at:
 
 ## Code examples
 
-2019/06/07 - More demos coming
-
 [Properties demo](https://github.com/shanecharles/level-up-with-generative-testing-2019-property-demos)
 
 [C# with Property Based Testing](https://github.com/shanecharles/level-up-with-generative-testing-2019-csharp-demo)
