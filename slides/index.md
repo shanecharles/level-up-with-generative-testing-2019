@@ -20,7 +20,6 @@
 ### About me
 
 <div class="two-floating-elements">
-<img src="images/mvp_logo_vertical.png" alt="mvp" style="height:145px;border:0;margin: auto;"/>
     <ul>
      <li>Shane Charles</li>
 <li>White Light Computing, Inc.</li>
